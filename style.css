@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #0f172a;
-    color: white;
+    background: #ffffff; /* changed from dark to white */
+    color: #222; /* dark text for readability */
 }
 
 /* Navbar */
@@ -15,14 +15,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background: #020617;
+    background: #ffffff; /* removed black background */
     position: fixed;
     width: 100%;
     top: 0;
+    border-bottom: 1px solid #eee;
 }
 
 .logo {
-    color: #38bdf8;
+    color: #6a0dad; /* purple instead of blue */
 }
 
 .nav-links {
@@ -36,12 +37,12 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #333; /* changed from white to dark */
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #6a0dad; /* purple hover */
 }
 
 /* Hero Section */
@@ -50,20 +51,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #020617, #0f172a);
+    background: #ffffff; /* removed dark gradient */
     text-align: center;
 }
 
 .hero h1 span {
-    color: #38bdf8;
+    color: #6a0dad; /* purple highlight instead of blue */
 }
 
 .btn {
     display: inline-block;
     padding: 10px 25px;
     margin-top: 15px;
-    background: #38bdf8;
-    color: black;
+    background: #6a0dad; /* purple button */
+    color: white;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -72,6 +73,7 @@ body {
 .about {
     padding: 80px 50px;
     text-align: center;
+    background: #ffffff;
 }
 
 .about-container {
@@ -90,6 +92,7 @@ body {
 .skills {
     padding: 80px 50px;
     text-align: center;
+    background: #f9f9f9; /* light section */
 }
 
 .skill-box {
@@ -100,16 +103,18 @@ body {
 }
 
 .skill {
-    background: #1e293b;
+    background: #f1f1f1; /* removed dark box */
     padding: 15px 25px;
     margin: 10px;
     border-radius: 8px;
+    color: #333;
 }
 
 /* Projects */
 .projects {
     padding: 80px 50px;
     text-align: center;
+    background: #ffffff;
 }
 
 .project-container {
@@ -120,11 +125,12 @@ body {
 }
 
 .project-card {
-    background: #1e293b;
+    background: #f5f5f5; /* light card instead of dark */
     padding: 25px;
     border-radius: 10px;
     width: 250px;
     transition: 0.3s;
+    color: #333;
 }
 
 .project-card:hover {
@@ -135,6 +141,7 @@ body {
 .contact {
     padding: 80px 50px;
     text-align: center;
+    background: #f9f9f9;
 }
 
 form {
@@ -146,23 +153,26 @@ input, textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 button {
     padding: 12px 25px;
-    background: #38bdf8;
+    background: #6a0dad; /* purple button */
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    color: white;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #020617;
+    background: #ffffff; /* removed black */
+    border-top: 1px solid #eee;
+    color: #555;
 }
 
 /* Responsive */
