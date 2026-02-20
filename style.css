@@ -2,134 +2,176 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #e8d8c3;
+    background: #0f172a;
+    color: white;
 }
 
 /* Navbar */
-header {
-    background: #1e2b44;
-    padding: 20px 60px;
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 50px;
+    background: #020617;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .logo {
-    color: white;
-    font-size: 22px;
-    font-weight: 700;
+    color: #38bdf8;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
     margin-left: 25px;
-    font-weight: 500;
 }
 
-nav a:hover {
-    color: #d4a05f;
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
 }
 
-/* Hero Layout */
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
 .hero {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 80px 80px;
+    background: linear-gradient(to right, #020617, #0f172a);
+    text-align: center;
 }
 
-/* Left Content */
-.hero-left {
-    width: 55%;
-}
-
-.small-text {
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.hero-left h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero-left span {
-    color: #d4a05f;
-}
-
-.hero-left h3 {
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.desc {
-    margin-bottom: 25px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 15px;
+.hero h1 span {
+    color: #38bdf8;
 }
 
 .btn {
-    padding: 12px 25px;
-    border-radius: 8px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    background: #38bdf8;
+    color: black;
     text-decoration: none;
-    font-weight: 600;
+    border-radius: 5px;
 }
 
-.primary {
-    background: #d4a05f;
-    color: white;
+/* About */
+.about {
+    padding: 80px 50px;
+    text-align: center;
 }
 
-.outline {
-    border: 2px solid #d4a05f;
-    color: #1e2b44;
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
 }
 
-/* Right Card */
-.hero-right {
-    width: 35%;
+.about img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Skills */
+.skills {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.skill-box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.card {
-    background: #f5f5f5;
-    padding: 30px;
-    border-radius: 20px;
+.skill {
+    background: #1e293b;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Projects */
+.projects {
+    padding: 80px 50px;
     text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+.contact {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
 }
 
-.card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #d4a05f;
-    margin-bottom: 15px;
+button {
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.card h2 {
-    margin-bottom: 5px;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
 }
 
-.card p {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.card span {
-    font-size: 14px;
-    color: #777;
+/* Responsive */
+@media(max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
