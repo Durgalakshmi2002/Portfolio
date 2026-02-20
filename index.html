@@ -2,55 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<header>
-    <div class="logo">JB</div>
-    <nav>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero">
-
-    <!-- Left Content -->
-    <div class="hero-left">
-        <p class="small-text">Hi there 👋</p>
-        <h1>Hi, I'm <span>Jothi Baala</span></h1>
-        <h3>Web Designing & Development</h3>
-        <p class="desc">
-            I’m also available for freelance projects.<br>
-            I build clean, responsive, and high-converting websites that help businesses grow.
-        </p>
-
-        <div class="buttons">
-            <a href="#" class="btn primary">Hire Me</a>
-            <a href="#" class="btn outline">Download Resume</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <h3>Web Developer</h3>
+            <p>I create modern and responsive websites.</p>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Right Profile Card -->
-    <div class="hero-right">
-        <div class="card">
-            <img src="profile.png" alt="Profile">
-            <h2>Jothi Baala</h2>
-            <p>Junior Web Developer (Freelance)</p>
-            <span>Sept 2023 — Dec 2025</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="https://via.placeholder.com/300" alt="profile">
+            <p>
+                I am a passionate web developer with skills in HTML, CSS, and JavaScript.
+                I love building responsive and user-friendly websites.
+                I am currently focusing on frontend development and UI design.
+            </p>
         </div>
-    </div>
+    </section>
 
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">SEO</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Portfolio Website using HTML & CSS</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>E-commerce Website Design</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>SEO Optimized Business Website</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
